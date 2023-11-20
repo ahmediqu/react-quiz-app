@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import AppButton from "../form/AppButton";
 import Form from "../form/Form";
 import Illustration from "../form/Illustration";
@@ -13,7 +14,7 @@ export default function Login() {
                 <InputText type="text" placeholder="Enter email" icon="alternate_email"/>
                 <InputText type="password" placeholder="Enter password" icon="lock"/>
                 <AppButton><span>Login</span></AppButton>
-                <div className="info">Don't have an account? <a href="signup.html">Signup</a> instead.</div>
+                <div className="info">Don't have an account? <Link to="/signup">Signup</Link> instead.</div>
 
             </Form>
     

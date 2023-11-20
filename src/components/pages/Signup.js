@@ -4,6 +4,7 @@ import Classes from '../styles/Signup.module.css';
 import InputText from "../form/InputText";
 import Checkbox from "../form/Checkbox";
 import AppButton from "../form/AppButton";
+import { Link } from "react-router-dom";
 export default function Signup() {
     return (
         <div>
@@ -19,7 +20,7 @@ export default function Signup() {
                     <AppButton><span>Submit now</span></AppButton>
                 </Form>
                 <div className="info">
-                Already have an account? <a href="login.html">Login</a> instead.
+                Already have an account? <Link to="/login">Login</Link> instead.
                 </div>
             
             </div>
